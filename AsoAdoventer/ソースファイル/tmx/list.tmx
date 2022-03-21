@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list version="1.5" tiledversion="1.6.0">
+  <object name="enemy" colsizeX="10" colsizeY="10">
+    <action name="move" sizeX ="400"/>
+  </object>
+  <object name="player" colsizeX="8" colsizeY="32">
+    <action name="run" sizeX="400" sizeY="550" cntX="6" cntY="2" source="Image/player/run.png" width="2400" height="1100" exrate="0.15">
+      <anime loop="-1" encoding="csv">
+        0,1,
+        1,1,
+        2,1,
+        3,1,
+        4,1,
+        5,1,
+        6,1,
+        7,1,
+        8,1,
+        9,1,
+        10,1,
+        11,1
+      </anime>
+    </action>
+    <action name="idle" sizeX="200" sizeY="500" cntX="2" cntY="1" source="Image/player/idle.png" width="400" height="500" exrate="0.17">
+      <anime loop="-1" encoding="csv">
+        0,30,
+        1,30
+      </anime>
+    </action>
+    <action name="jump" sizeX="580" sizeY="480" cntX="4" cntY="4" source="Image/player/jump.png" width="2320" height="1920" exrate="0.15">
+      <anime loop="1" encoding="csv">
+        0,1,
+        1,1,
+        2,1,
+        3,1,
+        4,1,
+        5,1,
+        6,1,
+        7,1,
+        8,1,
+        9,1,
+        10,1,
+        11,1,
+        12,1,
+        13,1,
+        14,1,
+        15,1
+      </anime>
+    </action>
+  </object>
+</list>

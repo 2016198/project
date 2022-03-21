@@ -1,0 +1,31 @@
+操作説明
+--------------------------------------------
+探索パート
+↑↓←→　　：キャラクター移動
+Rshift＋移動 ：走る
+Z	　　：調べる
+F	　　：持ち物を見る※
+
+謎解きパート
+基本マウス操作です
+X	：途中で探索パートに戻る
+SPACE	：謎解きクリア後、探索パートに戻る
+
+システム系
+Enter	：ゲームスタート
+ESC	：ゲーム終了
+
+※特定のアイテム入手以降でないと表示されません
+
+
+お借りした素材
+----------------------------------------------
+効果音ラボ(https://soundeffect-lab.info/)
+H/MIX(http://www.hmix.net/)
+DOVA-SYNDROME(https://dova-s.jp/)
+ニコニコモンズ(https://commons.nicovideo.jp/)
+Unsplash(https://unsplash.com/)
+ぴぽや倉庫(https://pipoya.net/sozai/)
+Pinterrest(https://www.pinterest.jp/)
+----------------------------------------------
+Presented by 馬刺し

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modulelist name="player" version="1.0">
+  <actmode name="moveLR">
+    <module name="keycheck" state="cnt" key="left">
+      <module name="statecheck" state="idle">
+        <module name ="setanime" state="run"/>
+      </module>
+      <module name ="move" x="-4"/>
+      <module name="edgecheck" move="-" pos="0">
+        <module name="setpos" pos="1024"/>
+      </module>
+    </module>
+  </actmode>
+  <actmode name="moveLR">
+    <module name="keycheck" state="cnt" key="right">
+      <module name="statecheck" state="idle">
+        <module name ="setanime" state="run"/>
+      </module>
+      <module name ="move" x="4"/>
+      <module name="edgecheck" move="+" pos="1024">
+        <module name="setpos" pos="0"/>
+      </module>
+    </module>
+  </actmode>
+  <actmode name="movedown">
+    <module name="floorcheck" state="run" mapchip ="16"/>
+    <module name ="move" y="0.25"/>
+  </actmode>
+  <actmode name="moveup">
+    <module name="ceilingcheck" state="run" mapchip ="16"/>
+  </actmode>
+  <actmode name="jump">
+    <module name="keycheck" state="cnt" key="buttonE">
+      <module name="setanime" state="jump"/>
+      <module name="move" y="-10"/>
+    </module>
+  </actmode>
+  <actmode name="setidle">
+    <module name="checknonchangpos">
+      <module name="jump">
+        <module name="setanime" state="idle"/>
+      </module>
+    </module>
+  </actmode>
+</modulelist>
