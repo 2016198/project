@@ -19,6 +19,7 @@ namespace chrono = std::chrono;
 
 bool SysInit(void)
 {
+	SetOutApplicationLogValidFlag(false);
 	SetGraphMode(640, 480, 32);
 	ChangeWindowMode(true);
 	SetWindowText("2016198_“›ˆäˆÇ“ñ");
@@ -169,7 +170,7 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
 		//(*shape1).Draw();//’†g‚ð’¼ÚŒ©‚ê‚é
 		/*shape2->Draw();
 		shape3->Shape::Draw();*/
-		_dbgDraw();
+		//_dbgDraw();
 		ScreenFlip();	
 	}
 	/*delete shape1;
