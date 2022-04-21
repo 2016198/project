@@ -12,7 +12,9 @@ Effect::Effect(Vector2Flt&& pos, Vector2Flt&& size, Vector2Flt&& speed, unsigned
 
 void Effect::Draw(void)
 {
-	DrawLine(pos_.x_, pos_.y_, pos_.x_ + size_.x_, pos_.y_ + size_.y_, color_, ness_);
+	DrawLine(static_cast<int>(pos_.x_), static_cast<int>(pos_.y_),
+		static_cast<int>(pos_.x_ + size_.x_), static_cast<int>(pos_.y_ + size_.y_),
+			color_, ness_);
 }
 
 void Effect::Draw(float exp)
