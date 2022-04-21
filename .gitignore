@@ -348,3 +348,12 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+/kadai/class/Cash.cpp
+/kadai/class/Cash.h
+/kadai/class/Color3.h
+/kadai/class/EleMoney.cpp
+/kadai/class/EleMoney.h
+/kadai/class/Select.cpp
+/kadai/class/Select.h
+/kadai/class/Ticket.cpp
+/kadai/class/Ticket.h
