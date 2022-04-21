@@ -1,7 +1,7 @@
 #include <DxLib.h>
 #include "Cash.h"
 
-Cash::Cash()//コンストラクタ
+Cash::Cash() : Ticket()//コンストラクタ
 {
 	scene_ = SCENE_ID::CASH;
 	color_.resize(CASH_COUNT + 6U);

@@ -1,7 +1,7 @@
 #include <DxLib.h>
 #include "Select.h"
 
-Select::Select()//コンストラクタ
+Select::Select() : Ticket()//コンストラクタ
 {
 	scene_ = SCENE_ID::SELECT;
 	color_.resize(2U);
@@ -25,6 +25,7 @@ bool Select::Init(void)//初期化処理
 void Select::UpDate(void)//更新処理
 {
 	GetMousePoint(&x_, &y_);
+	mouse_[0] = GetMouseInput() & MOUSE_INPUT_LEFT;
 
 	//戻るボタン
 	if (HitBack())
@@ -40,7 +41,7 @@ void Select::UpDate(void)//更新処理
 		x_ < 299 && y_ < 400)
 	{
 		color_[0] = YELLOW;
-		if (GetMouseInput() & MOUSE_INPUT_LEFT)
+		if (MouseOneInput())
 		{
 			scene_ = SCENE_ID::CASH;
 		}
@@ -54,7 +55,7 @@ void Select::UpDate(void)//更新処理
 		x_ < 541 && y_ < 400)
 	{
 		color_[1] = YELLOW;
-		if (GetMouseInput() & MOUSE_INPUT_LEFT)
+		if (MouseOneInput())
 		{
 			scene_ = SCENE_ID::ELEMONEY;
 		}
@@ -63,6 +64,7 @@ void Select::UpDate(void)//更新処理
 	{
 		color_[1] = WHITE;
 	}
+	mouse_[1] = mouse_[0];
 }
 
 void Select::Draw(void)//描画処理

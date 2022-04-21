@@ -123,7 +123,7 @@ void EleMoney::UpDate(void)//XVˆ—
 			x_ < 507 && y_ < 244)
 		{
 			color_[3] = YELLOW;
-			if (GetMouseInput() & MOUSE_INPUT_LEFT)
+			if (MouseOneInput())
 			{
 				Init();
 				IsBuy_ = false;
