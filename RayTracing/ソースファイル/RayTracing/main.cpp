@@ -1,6 +1,7 @@
 #include <dxlib.h>
 #include <cmath>
 #include "Geometry.h"
+#include "resource.h"
 
 unsigned int color[2] = {
 	0xffffaa,
@@ -9,10 +10,6 @@ unsigned int color[2] = {
 
 int imgX, imgY, offset;
 
-//ビデオに映し出されたココロの陰部
-//これは夢なのか現実なのか…。
-//熱い真夏の夜、過熱した欲望は
-//遂に危険な領域へと突入する。
 //ヒントになると思って、色々と関数を用意しておりますが
 //別にこの関数を使わなければいけないわけでも、これに沿わなければいけないわけでも
 //ありません。レイトレーシングができていれば構いません。
@@ -281,6 +278,7 @@ void RayTracing(const Position3& eye, const Sphere& sphere, const Plane& plane, 
 
 int WINAPI WinMain(_In_ HINSTANCE, _In_opt_ HINSTANCE, _In_ LPSTR , _In_ int) {
 	SetOutApplicationLogValidFlag(false);
+	SetWindowIconID(101);
 	ChangeWindowMode(true);
 	SetGraphMode(screen_width, screen_height, 32);
 	SetMainWindowText(L"2016198_筒井杏二");
