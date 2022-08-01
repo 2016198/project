@@ -95,6 +95,7 @@ bool IsHit(const Capsule& cap, const Circle& cc) {
 }
 
 int WINAPI WinMain(_In_ HINSTANCE, _In_opt_ HINSTANCE, _In_ LPSTR, _In_ int) {
+	SetOutApplicationLogValidFlag(false);
 	SetMainWindowText("2016198_“›ˆäˆÇ“ñ");
 	ChangeWindowMode(1);
 	SetGraphMode(512, 600, 32);

@@ -24,6 +24,7 @@ void SceneMng::Draw(void)
 
 bool SceneMng::SysInit(void)
 {
+	SetOutApplicationLogValidFlag(false);
 	SetGraphMode(ScreenSizeX, ScreenSizeY, 32);
 	ChangeWindowMode(true);
 	SetWindowText("2016198_“›ˆäˆÇ“ñ");

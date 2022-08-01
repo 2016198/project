@@ -945,6 +945,7 @@ bool GameInit(void)
 bool SysInit(void)  //プロトタイプ宣伝
 {
 	//-----------------システム処理
+	SetOutApplicationLogValidFlag(false);
 	SetWindowText("課題2_2016198_筒井  杏二");
 	//システム処理
 	SetGraphMode(SCREEN_SIZE_X, SCREEN_SIZE_Y, 16);

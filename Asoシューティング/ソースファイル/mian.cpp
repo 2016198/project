@@ -21,6 +21,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	//----------------システム処理
 	SetWindowText("課題3_2016198_筒井杏二");
  	//システム処理
+	SetOutApplicationLogValidFlag(false);
 	SetGraphMode(SCREEN_SIZE_X, SCREEN_SIZE_Y, 16);           //640x480ドット65536色モードの設定
 	ChangeWindowMode(true);                                   //true:window   false:フルスクリーン
 	if (DxLib_Init() == -1)                                   //Dxライブラリーの初期化
